@@ -1,0 +1,7 @@
+.custom-file-input:lang(zh) ~ .custom-file-label::after {
+    content: "浏览";
+}
+
+.custom-file-label::after {
+    content: "浏览";
+}
