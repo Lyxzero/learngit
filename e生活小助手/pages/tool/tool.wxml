@@ -1,0 +1,103 @@
+<text class="title">生活服务</text>
+<view class="tool">
+  <navigator url="/pages/zhougong/zhougong" class="tool_item" style="background-color: #fbf0dd;display: flex;">
+    <image class="logo_zg" mode="widthFix" src="https://moyv.top/wechat/images/zhougong.png"></image>
+    <image class="font_zg" mode="widthFix" src="https://moyv.top/wechat/images/font_zg.png"></image>
+  </navigator>
+  <navigator class="tool_item" url="/pages/express/express" style="width:263rpx;background-color: #58ACFA;display: inline-flex;">
+    <image class="logo_express" mode="widthFix" src="/images/icon_express_logo.png"></image>
+    <text class="express_txt">快递查询</text>
+  </navigator>
+  <navigator class="tool_item" url="/pages/exchange/exchange" style="width:263rpx;background-color: #01DFD7;display: inline-flex;margin-left:0;">
+    <image class="logo_express" mode="widthFix" src="/images/icon_rate_logo.png"></image>
+    <text class="express_txt">货币换算</text>
+  </navigator>
+
+
+  <view class="center_tool">
+    <navigator class="everyday" url="/pages/everyday/everyday">
+      <view class="ev_title">每日一句</view>
+      <view class="ev_date">
+        <view class="ev_line"></view>
+        {{day}}
+      </view>
+      <view class="ev_bt_line"></view>
+    </navigator>
+
+    <view class="dou_tool">
+      <navigator class="tool_item" url="/pages/bmi/bmi" style="width:263rpx;background-color: rgba(39, 144, 170, 0.747);display: inline-flex;">
+        <image class="logo_express" mode="widthFix" src="/images/icon_bmi_logo.png"></image>
+        <text class="express_txt">BMI指数</text>
+      </navigator>
+      <navigator class="tool_item" url="/pages/oilprice/oilprice" style="width:263rpx;background-color: #FE9A2E;display: inline-flex;">
+        <image class="logo_express" mode="widthFix" src="/images/icon_youjia_logo.png"></image>
+        <text class="express_txt">实时油价</text>
+      </navigator>
+    </view>
+
+  </view>
+
+
+
+
+</view>
+
+
+
+
+<!-- footer -->
+<text class="footer">- 更多功能 敬请期待 -</text>
+
+
+
+
+
+<!-- <view class="yiqing" hidden="{{isReady}}">
+  <text class="yq_title">疫情实时数据</text>
+  <view class="yq_content">
+    <view class="row">
+      <view class="yq_item">
+        <view class="yq_item_title">现存确诊</view>
+        <view style="color:#ff6a57" class="yq_item_num">{{desc.currentConfirmedCount}}</view>
+        <view style="color:#ff6a57" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.confirmedIncr}}</view>
+      </view>
+      <view class="yq_item">
+        <view class="yq_item_title">境外输入</view>
+        <view style="color:#ec9217" class="yq_item_num">{{desc.suspectedCount}}</view>
+        <view style="color:#ec9217" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.suspectedIncr}}
+        </view>
+      </view>
+      <view class="yq_item">
+        <view class="yq_item_title">现存重症</view>
+        <view style="color:#476da0" class="yq_item_num">{{desc.seriousCount}}</view>
+        <view style="color:#476da0" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.seriousIncr}}
+        </view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="yq_item">
+        <view class="yq_item_title">累计确诊</view>
+        <view style="color:#e83132" class="yq_item_num">{{desc.confirmedCount}}</view>
+        <view style="color:#e83132" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.confirmedIncr}}</view>
+      </view>
+      <view class="yq_item">
+        <view class="yq_item_title">累计死亡</view>
+        <view style="color:#4d5054" class="yq_item_num">{{desc.deadCount}}</view>
+        <view style="color:#4d5054" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.deadIncr}}
+        </view>
+      </view>
+      <view class="yq_item">
+        <view class="yq_item_title">累计治愈</view>
+        <view style="color:#10aeb5" class="yq_item_num">{{desc.curedCount}}</view>
+        <view style="color:#10aeb5" class="yq_item_yenum">
+          <text style="font-weight: bold;color:gray;">昨日</text>{{desc.curedIncr}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->

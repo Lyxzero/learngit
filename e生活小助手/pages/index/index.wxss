@@ -1,0 +1,227 @@
+page {
+  background: linear-gradient(to bottom, #fff,#fff, #f6f6f6);
+  /* background-color: #f6f6f6; */
+}
+
+.weather_bg {
+  text-align: center;
+  padding-top: 32rpx;
+  position: relative;
+  width: 100%;
+  height: 700rpx;
+  /* background-color: #7ec0ee; */
+  background: linear-gradient(to bottom , #56CCF2,#2F80ED);
+}
+
+.address {
+  display: inline-block;
+  color: white;
+}
+
+.temperature {
+  display: block;
+  margin-top: 32rpx;
+  font-size: 160rpx;
+  color: white;
+}
+
+.ari_info1 {
+  color: white;
+}
+
+.cond_txt {
+  font-size: 36rpx;
+  margin-right: 8rpx;
+}
+
+.ari_q_b {
+  margin-left: 8rpx;
+  font-size: 28rpx;
+  padding: 8rpx;
+  border-radius: 8rpx;
+  background-color: goldenrod;
+}
+
+.ari_q_a {
+  margin-left: 8rpx;
+  font-size: 28rpx;
+  padding: 8rpx;
+  border-radius: 8rpx;
+  background-color: #28a745;
+}
+
+.ari_info2 {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  color: white;
+}
+
+.ari_info2 text {
+  margin: 0 8rpx;
+}
+
+.poetry {
+  margin-top: 50rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 18rpx;
+}
+
+.poetry_txt {
+  color: white;
+}
+
+.forecast {
+  margin: 32rpx 18rpx 0 18rpx;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.day {
+  width: 45%;
+  margin: 32rpx;
+  display: inline-block;
+}
+
+.line {
+  display: inline-block;
+  width: 1rpx;
+  height: 100rpx;
+  background-color: gainsboro;
+}
+
+.day_info1 {
+  text-align: start;
+}
+
+.day_info1 text:nth-child(2) {
+  margin: 18rpx;
+  padding: 2rpx 20rpx;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: white;
+}
+
+.day_info1 text:nth-child(3) {
+  float: right;
+}
+
+.day_info2 {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.day_info2 image {
+  display: block;
+  width: 40rpx;
+}
+
+.hourly_title {
+  padding: 18rpx 32rpx;
+  font-size: 40rpx;
+  display: block;
+  font-weight: bold;
+}
+
+.hourly {
+  width: 718rpx;
+  margin: 0 18rpx;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  background-color: white;
+}
+
+.h_item {
+  margin: 18rpx 0;
+  display: inline-block;
+  width: 143.5rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.h_img {
+  margin: 64rpx 0;
+}
+
+.h_img image {
+  width: 60rpx;
+}
+
+.h_item text {
+  display: block;
+}
+
+.h_time {
+  color: gray;
+}
+
+.h_wind_dir {
+  margin-top: 32rpx;
+}
+
+.h_wind_sc {
+  color: gray;
+}
+
+.h_tmp {
+  color: #027aff;
+}
+
+.daily {
+  width: 718rpx;
+  white-space: nowrap;
+  margin: 32rpx 18rpx;
+  background-color: white;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.d_item {
+  
+  margin: 18rpx 0;
+  display: inline-block;
+  width: 179.5rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.d_item text {
+  display: block;
+}
+
+.d_date {
+  color: gray;
+}
+
+.d_wind_dir {
+  margin-top: 32rpx;
+}
+
+.d_wind_sc {
+  color: gray;
+}
+.subscribe{
+  position: absolute;
+  right: 34rpx;
+  display: inline-block;
+  border-radius: 18rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 18rpx 18rpx 9rpx 18rpx ;
+}
+
+.bg_wave{
+  position: absolute;
+  left: 0;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;  
+  height: 120rpx;
+}

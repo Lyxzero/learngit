@@ -1,0 +1,163 @@
+
+.top {
+  background-color: rgba(56, 169, 197, 0.747);
+  height: 400rpx;
+  position: absolute;
+  width: 100%;
+}
+
+.bmi {
+  color: white;
+  font-size: 17px;
+  margin-top: 40rpx;
+  margin-left: 50rpx;
+}
+
+.sz {
+  margin-left: 50rpx;
+  margin-top: 10px;
+  font-size: 35px;
+  color: rgba(151, 240, 93, 0.87);
+  margin-bottom: 30rpx;
+  height: 90rpx;
+}
+
+.st {
+  width: 49.75%;
+  color: white;
+  background-color: rgba(39, 144, 170, 0.747);
+  height: 80rpx;
+  line-height: 75rpx;
+  float: left;
+}
+
+.st2 {
+  margin-left: 30rpx;
+}
+
+.sg {
+  width: 49.75%;
+  color: white;
+  background-color: rgba(39, 144, 170, 0.747);
+  height: 80rpx;
+  line-height: 75rpx;
+  float: right;
+}
+
+.sg2 {
+  margin-left: 30rpx;
+}
+
+.tz {
+  font-size: 30rpx;
+  color: rgba(151, 240, 93, 0.87);
+}
+
+.health {
+  background-color: rgba(39, 144, 170, 0.747);
+  margin-top: 112rpx;
+  color: white;
+  height: 93rpx;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+}
+
+.inp1 {
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 35rpx;
+  color: rgb(128, 120, 120);
+  font-size: 35rpx;
+}
+
+.inp2 {
+  float: right;
+  margin-top: 35rpx;
+  margin-right: 30rpx;
+  color: rgb(128, 120, 120);
+  font-size: 35rpx;
+}
+
+.input {
+  width: 60%;
+  padding-right: 18rpx;
+  margin-left: 170rpx;
+  margin-top: 30rpx;
+  background-color: rgba(241, 229, 229, 0.699);
+  height: 65rpx;
+  border-radius: 5px;
+  text-align: right;
+  color: rgba(33, 158, 230, 0.74);
+}
+
+.btn {
+  width: 93%;
+  margin-top: 80rpx;
+  color: white;
+  background-color: rgba(75, 167, 209, 0.822);
+}
+
+.btn-hover {
+  background-color: rgba(37, 155, 209, 0.822);
+}
+
+.bz {
+  margin-top: 50rpx;
+  margin-right: 30rpx;
+  color: rgb(128, 120, 120);
+  font-size: 35rpx;
+  margin-left: 30rpx;
+}
+
+.bz1 {
+  width: 338rpx;
+  color: white;
+  background-color: rgba(75, 167, 209, 0.822);
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.bz2 {
+  width: 338rpx;
+  color: white;
+  background-color: rgba(75, 167, 209, 0.822);
+  height: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.bg {
+  width: 334rpx;
+  color: rgb(128, 120, 120);
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  margin-left: 35rpx;
+  text-align: center;
+  border: 1px solid rgb(218, 212, 212);
+}
+
+.bg_right {
+  width: 334rpx;
+  color: rgb(128, 120, 120);
+  height: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 40rpx;
+  text-align: center;
+  border: 1px solid rgb(218, 212, 212);
+}
+
+.kg {
+  color: rgba(181, 247, 137, 0.87);
+}
+.bg_right:last-child{
+  margin-bottom: 32rpx;
+}

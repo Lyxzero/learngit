@@ -1,0 +1,20 @@
+<text class="txt">来源货币</text>
+
+<view class="fromcoin">
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array2}}">
+    <text>{{array1[index1]}} {{array2[index1] }}</text>
+    <image style="width:50rpx" mode="widthFix" src="/images/icon_pulldown.png"></image>
+  </picker>
+  <input placeholder="100" bindinput="getMoney"></input>
+</view>
+
+
+<text class="txt">换算结果</text>
+<view class="fromcoin">
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+    <text>{{array1[index2]}} {{array2[index2] }}</text>
+    <image style="width:50rpx" mode="widthFix" src="/images/icon_pulldown.png"></image>
+  </picker>
+  <view class="result">{{result}}</view>
+</view>
+<view class="btn" bindtap="submit">换算</view>

@@ -1,0 +1,8 @@
+<map longitude="{{longitude}}" show-location bindmarkertap="markertap" scale="14" latitude="{{latitude}}" markers="{{markers}}"></map>
+<view style="info">
+  <view class="title">{{oildata[index].title}}</view>
+  <view class="address">{{oildata[index].address}}</view>
+  <view class="nav" bindtap="nav">
+    <image mode="widthFix" src="https://moyv.top/wechat/images/icon_nav.png"></image>
+  </view>
+</view>

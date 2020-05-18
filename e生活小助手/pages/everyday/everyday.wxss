@@ -1,0 +1,29 @@
+image{
+ border-radius: 46rpx 46rpx 0 0;
+  width: 690rpx;
+}
+.div{
+  margin: 32rpx;
+  border-radius: 50rpx;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  padding-bottom: 32rpx;
+}
+.btn{
+  display: inline-block;
+ text-align: center;
+  padding: 18rpx 0;
+  margin: 32rpx;
+  color: white;
+  font-size: 40rpx;
+  font-weight: bold;
+  background-color: #FA5858;
+   border-radius: 12rpx;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+}
+.div2{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 32rpx;
+}

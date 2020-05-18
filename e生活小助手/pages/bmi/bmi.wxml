@@ -1,0 +1,55 @@
+<view class="top">
+  <view class="bmi">
+    <text>BMI值\n</text>
+  </view>
+  <view class="sz">
+    <text>{{bmi}}</text>
+  </view>
+  <view class="st">
+    <text class="st2">健康风险：{{healthy}}</text>
+  </view>
+  <view class="sg">
+    <text class="sg2">身高标准体重：<text class="kg">{{idealweight}}</text>kg</text>
+  </view>
+  <view class="health">正常体重范围：{{normweight}}</view>
+  <text class="inp1">身高:</text>
+  <text class="inp2">cm</text>
+  <input value="{{input1}}" type="digit" placeholder="请输入您的身高" class="input" bindinput="input" />
+  <text class="inp1">体重:</text>
+  <text class="inp2">kg</text>
+  <input value="{{input2}}" type="digit" placeholder="请输入您的体重" class="input" bindinput="input2" />
+  <button style=" width: 93%;" class="btn" hover-class="btn-hover" bindtap="cal">开始计算</button>
+  <view class="bz">
+    <text>标准参考表</text>
+  </view>
+  <view class="bz1">
+    <text>BMI值</text>
+  </view>
+  <view class="bz2">
+    <text>身体状况</text>
+  </view>
+  <view class="bg">
+    <text>＜18.5</text>
+  </view>
+  <view class="bg_right">
+    <text>偏瘦</text>
+  </view>
+  <view class="bg">
+    <text>18.5 ~ 23.9</text>
+  </view>
+  <view class="bg_right">
+    <text>正常</text>
+  </view>
+  <view class="bg">
+    <text>24 ~ 27.9</text>
+  </view>
+  <view class="bg_right">
+    <text>偏胖</text>
+  </view>
+  <view class="bg">
+    <text>≥28</text>
+  </view>
+  <view class="bg_right">
+    <text>肥胖</text>
+  </view>
+</view>

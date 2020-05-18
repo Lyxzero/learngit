@@ -1,0 +1,4 @@
+{
+  "usingComponents": {"mp-icon": "../../weui-miniprogram/icon/icon"},
+  "navigationBarTitleText": "每日一句"
+}

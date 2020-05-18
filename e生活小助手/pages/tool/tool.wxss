@@ -1,0 +1,159 @@
+page {
+  background-color: #f6f6f6;
+}
+.tool{
+ 
+}
+.tool_item {
+  margin: 32rpx 32rpx 0 32rpx;
+  padding: 32rpx;
+  background-color: white;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-image: url(https://moyv.top/wechat/images/bg_item.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.yiqing {
+  overflow: hidden;
+  background-color: #10aeb5;
+  margin: 32rpx;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  background-size: 750rpx 200rpx;
+  background-repeat: no-repeat;
+  background-image: url(https://moyv.top/wechat/images/bg_yiqing.png);
+}
+
+.yq_title {
+  display: block;
+  margin: 32rpx;
+   font-size: 50rpx;
+  font-weight: bold;
+   background: linear-gradient(to bottom, white,#afdade);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
+
+.logo_zg {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.font_zg {
+  width: 400rpx;
+  height: 100rpx;
+  
+}
+.yq_content{
+  padding: 32rpx;
+  background-color: white;
+   border-radius: 10rpx 10rpx 0 0 ;
+}
+.yq_item{
+  display: inline-block;
+  width: 207rpx;
+  text-align: center;
+}
+.yq_item_title{
+  font-size: 28rpx;
+ font-weight: bold;
+}
+.yq_item_num{
+  font-weight: bold;
+  font-size: 50rpx;
+ 
+  
+}
+.yq_item:nth-child(1) .yq_item_num{
+ border-right: 1px solid gainsboro;
+}
+.yq_item:nth-child(2) .yq_item_num{
+ border-right: 1px solid gainsboro;
+}
+.yq_item_yenum{
+  font-size: 24rpx;
+}
+.row:nth-child(2){
+  margin-top: 18rpx;
+}
+.title{
+  font-size: 52rpx;
+  font-weight: bold;
+  display: block;
+  margin: 32rpx;
+}
+
+.express_txt{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: white;
+}
+.logo_express{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.footer{
+  position: fixed;
+  text-align: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  font-size: 24rpx;
+  color: gray;
+}
+.everyday{
+  height: 280rpx;
+  width:327rpx;
+  display: inline-block;
+  margin: 32rpx 0 32rpx -37rpx;
+  background-color: #FA5858;
+  border-radius: 32rpx;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  /* padding: 0 18rpx 18rpx 18rpx; */
+}
+.ev_title{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 28rpx;
+  
+}
+.ev_line{
+  height: 20rpx;
+  border-radius: 12rpx 12rpx 0 0;
+  background-color: gold;
+}
+.ev_date{
+  border-radius: 12rpx;
+  background-color: white;
+  color: #FA5858;
+  font-size: 100rpx;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 18rpx;
+}
+.dou_tool{
+  margin-top: -27rpx;
+  display: inline-block;
+  height: 320rpx;
+  width: 327rpx;
+}
+.center_tool{
+  display: flex;
+   justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.ev_bt_line{
+  margin: 24rpx 18rpx 0 18rpx;
+  height: 10rpx;
+  border-radius: 15rpx;
+  background-color: rgba(128, 128, 128, 0.7);
+}

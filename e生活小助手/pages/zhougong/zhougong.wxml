@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="jm">
+    <image mode="widthFix" src="https://moyv.top/wechat/images/zhougong.png"></image>
+    <image mode="widthFix" src="https://moyv.top/wechat/images/font_zg.png"></image>
+  </view>
+
+  <text class="wz">《周公解梦》即流传在民间的解梦之书，是我国\n古代的文化遗产，劳动人民只会的结晶，在民间
+流传甚广。了解梦境的含义可以帮助人们解决生\n活中的疑问。
+</text>
+  <view class="search">
+    <icon type="search" size="25" class="sea" />
+    <button class="btn" size="mini" hover-class="btn-hover" bindtap="jm">解梦</button>
+    <input placeholder="请输入您梦到的内容" value='{{input}}' bindinput="inputContent" />
+  </view>
+  <view class="content">
+    <view class="title">{{title}}</view>
+    <text>{{result}}</text>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<view class="header">
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{province2}}">
+ <view class="city">
+    <mp-icon type="field" icon="location" color="black" size="{{18}}"></mp-icon>
+    {{province2[index]}}
+  </view>
+
+</picker>
+ 
+  <view class="up-time">更新时间 {{up_time}}</view>
+
+</view>
+<view class="oli">
+  <view class="oli-name">89＃</view>
+  <view class="oli-price">{{arr.p89}}
+    <text>元/升</text>
+  </view>
+</view>
+<view class="oli">
+  <view class="oli-name">92＃</view>
+  <view class="oli-price">{{arr.p92}}
+    <text>元/升</text>
+  </view>
+</view>
+<view class="oli">
+  <view class="oli-name">95＃</view>
+  <view class="oli-price">{{arr.p95}}
+    <text>元/升</text>
+  </view>
+</view>
+<view class="oli">
+  <view class="oli-name">98＃</view>
+  <view class="oli-price">{{arr.p98}}
+    <text>元/升</text>
+  </view>
+</view>
+<view class="oli">
+  <view class="oli-name">0＃</view>
+  <view class="oli-price">{{arr.p0}}
+    <text>元/升</text>
+  </view>
+</view>
+
+<view class="footer">
+  <view class="oiling" bindtap="oiling">去加油</view>
+</view>

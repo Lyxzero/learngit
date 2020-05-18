@@ -1,0 +1,11 @@
+<view class="div">
+  <image mode="widthFix" src="{{imgsrc}}"></image>
+  <view class="div2">
+    <view bindtap="playMp3">
+      <mp-icon type="field" icon="voice" color="#FA5858" size="{{32}}"></mp-icon>
+    </view>
+
+    <button style="width: 526rpx;" open-type="share" class="btn">分享</button>
+  </view>
+
+</view>

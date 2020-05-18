@@ -1,0 +1,68 @@
+page{
+  background-color: #f6f6f6;
+}
+.top {
+  text-align: center;
+  height: 300rpx;
+  padding-top: 80rpx;
+  border-radius: 0 0 80rpx 80rpx;
+  background: linear-gradient(45deg, rgb(15, 138, 87), rgb(49, 204, 139));
+}
+
+.title {
+  font-size: 80rpx;
+  display: block;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+ 
+}
+
+image {
+  width: 100%;
+}
+
+.search {
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+  margin: -80rpx 32rpx 50rpx 32rpx;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  bottom: 7rpx;
+  font-size: 36rpx;
+  padding: 20rpx;
+  border: 1rpx solid #f6f9fb;
+  border-radius: 50rpx;
+  background-color: #fff;
+  color: darkgray;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.body {
+  width: 100%;
+  position: absolute;
+  margin-top: 0rpx;
+}
+
+.body > view > view {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  opacity: 0.5;
+}
+
+text {
+  color: white;
+}
+
+.news {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  opacity: 0.5;
+}
+
+.news > text {
+  color: #fff;
+}

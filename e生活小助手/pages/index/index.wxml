@@ -1,0 +1,82 @@
+<view hidden="{{isReady}}">
+  <view class="weather_bg">
+    <view class="address" bindtap="chooseWeather">
+      <mp-icon type="field" icon="location" color="white" size="{{16}}"></mp-icon>
+      <text>{{address}}</text>
+    </view>
+    <view class="subscribe">
+      <image style="width:50rpx;" mode="widthFix" bindtap="subscribe" src="/images/icon_subscribe.png">订阅</image>
+    </view>
+
+    <text class="temperature">{{nowWeather.tmp}}</text>
+    <view class="ari_info1">
+      <text class="cond_txt">{{nowWeather.cond_txt}}</text>
+      <text class="{{nowWeather.qlty_class}}">{{nowWeather.aqi+" "+nowWeather.qlty}}</text>
+    </view>
+    <view class="ari_info2">
+      <text>{{nowWeather.wind_dir+" "+nowWeather.wind_sc+"级"}}</text>
+      <text>湿度 {{nowWeather.hum}}</text>
+      <text>气压 {{nowWeather.pres}}</text>
+    </view>
+    <view class="poetry">
+      <text class="poetry_txt">{{nowWeather.poetry_txt}}</text>
+    </view>
+    <image class="bg_wave" src="https://moyv.top/wechat/images/bg_wave.gif" mode="scaleToFill"></image>
+  </view>
+  <view class="forecast">
+    <view class="day">
+      <view class="day_info1">
+        <text>今天</text>
+        <text class="{{nowWeather.qlty_class}}">{{nowWeather.qlty}}</text>
+        <text>{{daily_forecast[0].tmp_min}}°~{{daily_forecast[0].tmp_max}}°</text>
+      </view>
+      <view class="day_info2">
+        <text>{{daily_forecast[0].cond_txt_d}}</text>
+        <image mode="widthFix" src="/images/weather/{{daily_forecast[0].imgsrc_d}}.png"></image>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="day">
+      <view class="day_info1">
+        <text>明天</text>
+        <text class="{{nowWeather.qlty_class}}">{{nowWeather.qlty}}</text>
+        <text>{{daily_forecast[1].tmp_min}}°~{{daily_forecast[1].tmp_max}}°</text>
+      </view>
+      <view class="day_info2">
+        <text>{{daily_forecast[1].cond_txt_d}}</text>
+        <image mode="widthFix" src="/images/weather/{{daily_forecast[1].imgsrc_d}}.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <text class="hourly_title">24小时预报</text>
+  <scroll-view scroll-x="true" class="hourly">
+    <view class="h_item" wx:for="{{hourly}}" wx:key="index">
+      <text class="h_time">{{item.time}}</text>
+      <view class="h_img">
+        <image mode="widthFix" src="/images/weather/{{item.imgsrc}}.png"></image>
+      </view>
+      <text class="h_tmp">{{item.tmp}}°</text>
+      <text class="h_wind_dir">{{item.wind_dir}}</text>
+      <text class="h_wind_sc">{{item.wind_sc}}级</text>
+    </view>
+
+  </scroll-view>
+
+  <scroll-view scroll-x="true" class="daily">
+    <view class="d_item" wx:for="{{daily_forecast}}" wx:key="index">
+      <text class="d_txt">{{item.d_txt}}</text>
+      <text class="d_date">{{item.d_date}}</text>
+      <view class="h_img">
+        <image mode="widthFix" src="/images/weather/{{item.imgsrc_d}}.png"></image>
+      </view>
+      <text class="h_tmp">{{item.tmp_min}}°~{{item.tmp_max}}°</text>
+      <view class="h_img">
+        <image mode="widthFix" src="/images/weather/{{item.imgsrc_n}}.png"></image>
+      </view>
+      <text class="d_wind_dir">{{item.wind_dir}}</text>
+      <text class="d_wind_sc">{{item.wind_sc}}级</text>
+    </view>
+
+  </scroll-view>
+</view>

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/refuse/refuse",
+    "pages/tool/tool",
+    "pages/zhougong/zhougong",
+    "pages/express/express",
+    "pages/logistics/logistics",
+    "pages/exchange/exchange",
+    "pages/everyday/everyday",
+    "pages/bmi/bmi",
+    "pages/olimap/olimap",
+    "pages/oilprice/oilprice"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用户根据您的位置来提供对应的天气信息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "e生活小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#027aff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "天气预报",
+        "iconPath": "images/icon_index.png",
+        "selectedIconPath": "images/icon_index_active.png"
+      },
+      {
+        "pagePath": "pages/refuse/refuse",
+        "text": "垃圾分类",
+        "iconPath": "images/icon_ljfl.png",
+        "selectedIconPath": "images/icon_ljfl_active.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "生活服务",
+        "iconPath": "images/icon_tool.png",
+        "selectedIconPath": "images/icon_tool_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  }
+}

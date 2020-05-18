@@ -1,0 +1,10 @@
+<view class="search">
+  <input type="text" bindblur="listener" bindinput="listener" placeholder="请输入快递单号" value="{{num}}"/>
+  <view hidden="{{isClear}}" bindtap="input_clear" class="close">
+    <mp-icon icon="close2" type="field" color="gray" size="{{16}}"></mp-icon>
+  </view>
+
+  <image mode="widthFix" bindtap="sweep" src="/images/icon_sweep.png"></image>
+
+</view>
+<view bindtap="submit" class="bt_submit">查询</view> 
