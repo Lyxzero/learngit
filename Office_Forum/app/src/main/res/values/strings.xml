@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">善用offices</string>
+    <string name="title_activity_main">善用offices</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">课程</string>
+    <string name="title_notifications">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
