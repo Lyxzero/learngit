@@ -21,7 +21,8 @@ Page({
         imgsrc_d: 100,
         imgsrc_n: 100
       }
-    ]
+    ],
+    collectionCityArray:[]
   },
 
   /**
@@ -116,7 +117,7 @@ Page({
           url: 'https://apis.map.qq.com/ws/geocoder/v1/?get_poi=0&key=W3RBZ-6ITE3-JWH3F-YRZHU-G6TJZ-QBBNZ&location=' + location,
           success: function(result) {
 
-            var address = " " + result.data.result.address_component.city + " " + result.data.result.address_component.district
+            var address = result.data.result.address_component.city + " " + result.data.result.address_component.district
 
             that.setData({
               address: address
@@ -189,7 +190,7 @@ Page({
           success: function(result) {
             var city = result.data.result.address_component.city
             that.setData({
-              address: " " + result.data.result.address_component.city + " " + result.data.result.address_component.district
+              address: result.data.result.address_component.city + " " + result.data.result.address_component.district
             })
             city = city.substring(0, city.length - 1)
             that.getNowWeather(location2, city)
@@ -203,7 +204,7 @@ Page({
       fail() {
         wx.getSetting({
           success(res) {
-            console.log(res.authSetting)
+            //console.log(res.authSetting)
             if (!res.authSetting['scope.userLocation']) {
               wx.showModal({
                 title: '获取地图位置失败',
@@ -320,12 +321,112 @@ Page({
     })
   },
   /**
+   * 收藏天气
+   */
+  async collection(){
+    let that = this
+    //console.log(this.data.collectionCityArray.length)
+    var collectionCityArray = this.data.collectionCityArray
+    var city = this.data.address.substring(0,this.data.address.indexOf(" "))
+    if(collectionCityArray.indexOf(city)!=-1){
+    
+      wx.showModal({
+        title: '提示',
+        content: '已经收藏该城市，是否取消收藏？',
+        confirmText:'取消收藏',
+        cancelText:'算了',
+        success (res) {
+          if (res.confirm) {
+            var newCityArray = collectionCityArray
+            var index = newCityArray.indexOf(city)
+            newCityArray.splice(index,1)
+            wx.cloud.callFunction({
+              name:"deleteCollectionCity",
+              data:{
+                city:newCityArray
+              }
+            }).then(res =>{
+              //console.log(res)
+              wx.showToast({
+                title: '取消成功!',
+              })
+              that.getCollectionCityArray()//刷新收藏城市数组
+            })
+          } else if (res.cancel) {
+
+          }
+        }
+      })
+    }else if(collectionCityArray.length>4){
+      wx.showModal({
+        title: '提示',
+        content: '最多收藏五个城市，是否前往收藏页面进行修改？',
+        confirmText:'前往',
+        success (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '/pages/collection/collection',
+            })
+          } else if (res.cancel) {
+            //console.log('用户点击取消')
+          }
+        }
+      })
+    }else if(collectionCityArray.length<5){
+      //console.log(city)
+      await wx.cloud.callFunction({
+        name:"addCollectionCity",
+        data:{
+          city:city
+        }
+      }).then(res =>{
+        //console.log(res)
+        wx.showToast({
+          title: '收藏成功!',
+        })
+        this.getCollectionCityArray()//刷新收藏城市数组
+      })
+    }
+   
+  },
+  /**
+   * 获取收藏城市数组
+   */
+  getCollectionCityArray(){
+    wx.cloud.callFunction({
+      name:"getCollectionCityArray",
+    }).then(res =>{
+      //console.log(res)
+      if(res.result.length>0){
+        this.setData({
+          collectionCityArray:res.result[0].city
+        })
+      }else{
+        this.setData({
+          collectionCityArray:[]
+        })
+      }
+     
+    })
+  },
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
-    this.AutoGetWeather()
-
+    console.log(options.city)
+    var city = options.city
+    if (city != undefined) {
+      this.setData({
+        address: city+"市 "
+      })
+      this.getNowWeather(city, city)
+      this.getHourly(city)
+      this.getForecast(city)
+    }else{
+      this.AutoGetWeather()
+    }
+    
+    this.getCollectionCityArray()
   },
 
   /**
@@ -339,7 +440,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    this.getCollectionCityArray()//刷新收藏城市数组
   },
 
   /**

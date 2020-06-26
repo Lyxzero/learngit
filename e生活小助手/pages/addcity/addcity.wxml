@@ -1,0 +1,23 @@
+<view class="search">
+
+  <icon type="search" size="18" color="#0081ff"></icon>
+
+  <input  bindinput="bindKeyInput" placeholder="输入城市名"></input>
+</view>
+<view class="result">
+  <view class="result-item" data-city="{{item.citysName}}" bindtap="selectCity" wx:for="{{result}}" wx:key="index">
+    
+    <view>{{item.title}}</view>
+    <view class="tap" wx:if="{{item.isCol}}">已收藏</view>
+  </view>
+</view>
+
+<view class="subtitle" wx:if="{{result.length==0}}">
+    <view class="icon-title"></view>
+    <view class="text-title">热门城市</view>
+  </view>
+<view class="hot_city" wx:if="{{result.length==0}}">
+  <view  bindtap="selectCity" data-city="{{item.citysName}}"  class="hot_city_item" wx:for="{{hot_city}}" wx:key="index">
+    {{item.citysName}}
+  </view>
+</view>

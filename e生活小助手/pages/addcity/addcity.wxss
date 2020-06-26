@@ -1,0 +1,71 @@
+
+.search{
+  margin: 32rpx 32rpx 18rpx 32rpx;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.search input{
+  flex: 1;
+  padding:18rpx 32rpx;
+}
+icon{
+  padding: 18rpx 0 18rpx 18rpx;
+}
+
+
+.result{
+  border-top: gainsboro 1rpx solid;
+}
+.result-item{
+  display: flex;
+  padding: 32rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  border-bottom: gainsboro 1rpx solid;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.tap{
+  background-color: #0081ff;
+  color: white;
+  font-size: 24rpx;
+  padding: 8rpx;
+  border-radius: 8rpx;
+}
+
+.subtitle {
+  display: flex;
+  padding: 18rpx 32rpx;
+}
+
+.icon-title {
+  width: 10rpx;
+  margin: 12rpx 16rpx 8rpx 0;
+  background-color: #0081ff;
+  border-radius: 50rpx;
+}
+
+.text-title {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.hot_city{
+  margin: 32rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 218rpx);
+  grid-row-gap: 32rpx;
+  grid-column-gap: 18rpx;
+}
+.hot_city_item{
+  padding: 12rpx 0;
+  border-radius: 8rpx;
+  text-align: center;
+  color: #333333;
+  background-color: #f0f0f0;
+}
+

@@ -3,11 +3,11 @@
 
   <view class="logistics-info">
     <view class="logistics-info-title">
-      <image src="https://moyv.top/wechat/images/express/京东快递.png" mode="widthFix"></image>
-      <view class="logistics-name">{{list.kuaidiname}}</view>
-      <view class="logistics-num">{{list.num}}</view>
+      <image src="{{list.logo}}" mode="widthFix"></image>
+      <view class="logistics-name">{{list.expName}}</view>
+      <view class="logistics-num">{{list.number}}</view>
       <view class="line"></view>
-      <view class="logistics-status">{{status[list.status]}}</view>
+      <view class="logistics-status">{{list.status}}</view>
     </view>
     <view class="logistics-box">
 
@@ -20,7 +20,7 @@
           <view class="center-circle"></view>
         </view>
         <view class="logistics-item-right ">
-          <view class="logistics-item-text">{{item.content}}</view>
+          <view class="logistics-item-text">{{item.status}}</view>
           <view class="logistics-item-time">{{item.time}}</view>
         </view>
       </view>

@@ -1,0 +1,90 @@
+<view class="header-box">
+	<view class="user-info" >
+		<view class="username" bindtap="{{userInfo.nickName?'':'showModal'}}">{{userInfo.nickName?'Hi，'+userInfo.nickName:'未登录'}}</view>
+		<image class="avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/images/icon_default_avatar.png'}}" mode="widthFix"></image>
+	</view>
+</view>
+
+<image class="banner" src="/images/bg_banner.png" mode="widthFix"></image>
+
+<view class="nav-list">
+	<view class="nav-title">账户</view>
+	<navigator url="/pages/collection/collection" class="nav-item" >
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_weather.png"></image>
+			<view>收藏天气</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</navigator>
+	<!-- <view class="nav-item">
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_subscribe.png"></image>
+			<view>订阅次数</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</view> -->
+	<navigator url="/pages/express/express" class="nav-item">
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_express.png"></image>
+			<view>快递查询历史</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</navigator>
+</view>
+
+<view class="nav-list">
+	<view class="nav-title">其他</view>
+	<button style="background-color:white;width:686rpx" open-type="contact" class="nav-item">
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_kf.png"></image>
+			<view>在线客服</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</button>
+	<button style="background-color:white;width:686rpx" open-type="openSetting" class="nav-item">
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_setting.png"></image>
+			<view>设置</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</button>
+	<button style="background-color:white;width:686rpx" open-type="feedback" class="nav-item">
+		<view class="nav-item-left">
+			<image mode="widthFix" src="/images/icon_item_fk.png"></image>
+			<view>反馈</view>
+		</view>
+		<view class="nav-item-right">
+			<view></view>
+			<mp-icon icon="arrow" color="#8a8a8a" size="{{12}}"></mp-icon>
+		</view>
+	</button>
+</view>
+
+
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+    <view class="modals-cancel" bindtap="hideModal"></view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+			<view class="modals-close">
+					<mp-icon icon="close2" color="#8a8a8a" bindtap="hideModal" size="{{16}}"></mp-icon>
+			</view>
+			<view class="modals-title">
+				授权登录
+			</view>
+			<button style="width: 686rpx;" class="btn-getUserInfo" bindgetuserinfo="getuserinfo" open-type="getUserInfo">点击授权</button>
+		</view>
+</view>

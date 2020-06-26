@@ -1,0 +1,147 @@
+page {
+  background-color: #f6f6f6;
+}
+
+.header-box {
+  width: 1250rpx;
+  top: 0;
+  height: 300rpx;
+  left: -250rpx;
+  position: relative;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  background: #027aff;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #027aff, #0278ffc5);
+}
+
+.banner {
+  position: relative;
+  border-radius: 32rpx;
+  margin: -128rpx 32rpx 0 32rpx;
+  width: 686rpx;
+  height: 160rpx;
+}
+
+.user-info {
+  width: 686rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 18rpx;
+}
+
+.username {
+  font-size: 80rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 4rpx solid white;
+}
+
+.nav-list {
+  margin: 32rpx;
+  background-color: white;
+  border-radius: 16rpx;
+}
+
+.nav-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 18rpx 32rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 32rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.nav-item:last-child {
+  border-bottom: 0rpx;
+}
+
+.nav-item-left,
+.nav-item-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-left image {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.nav-item-left view {
+  margin-left: 16rpx;
+  font-size: 30rpx;
+  color: #aaaaaa;
+  font-weight: 500 !important;
+}
+
+
+
+
+/*模态框*/
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.bottom-dialog-body {
+  border-radius: 50rpx 50rpx 0 0;
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+/*动画前初始位置*/
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.modals-close{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modals-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.btn-getUserInfo{
+  margin-top: 32rpx;
+  border-radius: 50rpx;
+  padding: 16rpx 0;
+  color: white;
+  background-color: #027aff;
+}

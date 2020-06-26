@@ -225,3 +225,12 @@ page {
   mix-blend-mode: screen;  
   height: 120rpx;
 }
+.collection{
+  position: absolute;
+  top: 164rpx;
+  right: 34rpx;
+  display: inline-block;
+  border-radius: 18rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 18rpx 18rpx 9rpx 18rpx ;
+}

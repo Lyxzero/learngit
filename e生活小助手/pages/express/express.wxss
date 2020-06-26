@@ -36,3 +36,38 @@ page{
    border-radius: 12rpx;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
 }
+
+.history-title{
+  font-weight: bold;
+  margin: 32rpx;
+}
+
+.history-empty{
+  display: flex;
+  justify-content: center;
+}
+.history-empty image{
+  width: 300rpx;
+}
+.history-item{
+  margin: 16rpx 32rpx;
+  background-color: white;
+  padding: 32rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+}
+.history-item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 32rpx;
+}
+.express-name{
+  font-weight: bold;
+}
+.express-num{
+  font-size: 28rpx;
+  color: #666666;
+}
+

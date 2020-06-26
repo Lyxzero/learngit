@@ -1,0 +1,18 @@
+<view class="city {{item.bg_class}}" bindtap="navToIndex" data-city="{{item.city}}" wx:for="{{cityWeather}}" wx:key="index">
+  <view class="header">
+    <view class="cityName">{{item.city}}
+      <view class="tap" wx:if="{{item.city==defaultcity}}">默认</view>
+    </view>
+    <image catchtap="openMenu" data-index="{{item.index}}" class="menu" mode="widthFix" src="/images/icon_menu.png"></image>
+  </view>
+  <view class="center">
+    <view class="tmp">{{item.tmp}}°</view>
+    <!-- 图片链接加上三元表达式，防止报错 -->
+    <image class="cond" mode="widthFix" src="https://moyv.top/wechat/images/weather/{{item.cond==undefined?'100':item.cond}}.png"></image>
+  </view>
+</view>
+
+<navigator url="/pages/addcity/addcity" class="addcity" wx:if="{{collectionCityArray.length<5}}">
+  <image mode="widthFix" src="/images/icon_add.png"></image>
+  <view>添加城市 (最多五个)</view>
+</navigator>

@@ -1,0 +1,71 @@
+page {
+  background-color: #f6f6f6;
+  padding-bottom: 32rpx;
+}
+
+.addcity {
+  margin: 32rpx;
+  border-radius: 100rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  color: #027aff;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 18rpx 0;
+}
+
+.addcity image {
+  margin-right: 12rpx;
+  width: 32rpx;
+  height: 32rpx;
+ 
+}
+
+.city {
+  margin: 32rpx 32rpx 0 32rpx;
+  padding: 32rpx;
+  background: linear-gradient(45deg, #0081ff, #0080ff83);
+  color: white;
+  border-radius: 18rpx;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+.bg-cloud{
+  background: linear-gradient(45deg, #507294, #aaa);
+}
+.bg-sunny{
+   background: linear-gradient(45deg, #0081ff, #0080ff83);
+}
+.bg-rain{
+   background: linear-gradient(45deg, #003e7c, #003e7c79);
+}
+.cond {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.menu {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 0 18rpx 18rpx;
+}
+.header{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  font-size: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.tap{
+  display: inline-block;
+  background-color: #39b54a;
+  border-radius: 8rpx;
+  color: white;
+  padding: 8rpx;
+  font-size: 28rpx;
+}

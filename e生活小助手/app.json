@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/refuse/refuse",
     "pages/tool/tool",
@@ -11,7 +10,10 @@
     "pages/everyday/everyday",
     "pages/bmi/bmi",
     "pages/olimap/olimap",
-    "pages/oilprice/oilprice"
+    "pages/oilprice/oilprice",
+    "pages/mine/mine",
+    "pages/collection/collection",
+    "pages/addcity/addcity"
   ],
   "permission": {
     "scope.userLocation": {
@@ -45,6 +47,12 @@
         "text": "生活服务",
         "iconPath": "images/icon_tool.png",
         "selectedIconPath": "images/icon_tool_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icon_mine.png",
+        "selectedIconPath": "images/icon_mine_active.png"
       }
     ]
   },

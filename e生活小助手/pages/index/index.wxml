@@ -2,10 +2,14 @@
   <view class="weather_bg">
     <view class="address" bindtap="chooseWeather">
       <mp-icon type="field" icon="location" color="white" size="{{16}}"></mp-icon>
-      <text>{{address}}</text>
+      <text> {{address}}</text>
     </view>
     <view class="subscribe">
       <image style="width:50rpx;" mode="widthFix" bindtap="subscribe" src="/images/icon_subscribe.png">订阅</image>
+    </view>
+
+    <view class="collection" bindtap="collection">
+      <image  style="width:50rpx;" mode="widthFix" src="/images/icon_collection.png"></image>
     </view>
 
     <text class="temperature">{{nowWeather.tmp}}</text>
@@ -32,7 +36,7 @@
       </view>
       <view class="day_info2">
         <text>{{daily_forecast[0].cond_txt_d}}</text>
-        <image mode="widthFix" src="/images/weather/{{daily_forecast[0].imgsrc_d}}.png"></image>
+        <image mode="widthFix" src="https://moyv.top/wechat/images/weather/{{daily_forecast[0].imgsrc_d}}.png"></image>
       </view>
     </view>
     <view class="line"></view>
@@ -44,7 +48,7 @@
       </view>
       <view class="day_info2">
         <text>{{daily_forecast[1].cond_txt_d}}</text>
-        <image mode="widthFix" src="/images/weather/{{daily_forecast[1].imgsrc_d}}.png"></image>
+        <image mode="widthFix" src="https://moyv.top/wechat/images/weather/{{daily_forecast[1].imgsrc_d}}.png"></image>
       </view>
     </view>
   </view>
@@ -54,7 +58,7 @@
     <view class="h_item" wx:for="{{hourly}}" wx:key="index">
       <text class="h_time">{{item.time}}</text>
       <view class="h_img">
-        <image mode="widthFix" src="/images/weather/{{item.imgsrc}}.png"></image>
+        <image mode="widthFix" src="https://moyv.top/wechat/images/weather/{{item.imgsrc}}.png"></image>
       </view>
       <text class="h_tmp">{{item.tmp}}°</text>
       <text class="h_wind_dir">{{item.wind_dir}}</text>
@@ -68,11 +72,11 @@
       <text class="d_txt">{{item.d_txt}}</text>
       <text class="d_date">{{item.d_date}}</text>
       <view class="h_img">
-        <image mode="widthFix" src="/images/weather/{{item.imgsrc_d}}.png"></image>
+        <image mode="widthFix" src="https://moyv.top/wechat/images/weather/{{item.imgsrc_d}}.png"></image>
       </view>
       <text class="h_tmp">{{item.tmp_min}}°~{{item.tmp_max}}°</text>
       <view class="h_img">
-        <image mode="widthFix" src="/images/weather/{{item.imgsrc_n}}.png"></image>
+        <image mode="widthFix" src="https://moyv.top/wechat/images/weather/{{item.imgsrc_n}}.png"></image>
       </view>
       <text class="d_wind_dir">{{item.wind_dir}}</text>
       <text class="d_wind_sc">{{item.wind_sc}}级</text>

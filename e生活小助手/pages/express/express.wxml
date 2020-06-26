@@ -1,10 +1,22 @@
 <view class="search">
-  <input type="text" bindblur="listener" bindinput="listener" placeholder="请输入快递单号" value="{{num}}"/>
-  <view hidden="{{isClear}}" bindtap="input_clear" class="close">
-    <mp-icon icon="close2" type="field" color="gray" size="{{16}}"></mp-icon>
-  </view>
+	<input type="text" bindblur="listener" bindinput="listener" placeholder="请输入快递单号" value="{{num}}" />
+	<view hidden="{{isClear}}" bindtap="input_clear" class="close">
+		<mp-icon icon="close2" type="field" color="gray" size="{{16}}"></mp-icon>
+	</view>
 
-  <image mode="widthFix" bindtap="sweep" src="/images/icon_sweep.png"></image>
+	<image mode="widthFix" bindtap="sweep" src="/images/icon_sweep.png"></image>
 
 </view>
-<view bindtap="submit" class="bt_submit">查询</view> 
+<view bindtap="submit" class="bt_submit">查询</view>
+
+<view class="history-title">历史记录</view>
+<view class="history-item" data-num="{{item.num}}" bindtap="clickItem" wx:for="{{historyArray}}" wx:key="index">
+  <image mode="widthFix" src="{{item.logo}}"></image>
+  <view>
+    <view class="express-name">{{item.name}}</view>
+    <view class="express-num">快递单号: {{item.num}}</view>
+  </view>
+</view>
+<view class="history-empty" wx:if="{{historyArray.length<1}}">
+  <image mode="widthFix" src="/images/bg_empty.png"></image>
+</view>

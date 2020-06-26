@@ -16,14 +16,14 @@ Page({
     var that = this
     wx.request({
       url: 'https://open.iciba.com/dsapi/',
-      success:function(result){
+      success: function (result) {
         console.log(result)
         var imgsrc = result.data.fenxiang_img
         var tts = result.data.tts
         innerAudioContext.src = tts
-         that.setData({
-           imgsrc: imgsrc
-         })
+        that.setData({
+          imgsrc: imgsrc
+        })
       }
     })
   },
@@ -45,9 +45,9 @@ Page({
   /**
    * 播放音频
    */
-  playMp3(){
+  playMp3() {
     innerAudioContext.play()
-   },
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
